@@ -87,17 +87,17 @@ class $modify(PColorsPlayerObject, PlayerObject) {
         // ccColor4F for everything
         cocos2d::ccColor3B myColor1 = GameManager::sharedState()->colorForIdx(GameManager::sharedState()->getPlayerColor());
         cocos2d::ccColor3B myColor2 = GameManager::sharedState()->colorForIdx(GameManager::sharedState()->getPlayerColor2());
-        cocos2d::ccColor4F primaryColorParticle = cocos2d::ccColor4F(myColor1.r / 255.0f, myColor1.g / 255.0f, myColor1.b / 255.0f, 255.0f);
-        cocos2d::ccColor4F secondaryColorParticle = cocos2d::ccColor4F(myColor2.r / 255.0f, myColor2.g / 255.0f, myColor2.b / 255.0f, 255.0f);
+        cocos2d::ccColor4F primaryColorParticle = cocos2d::ccColor4F({myColor1.r / 255.0f, myColor1.g / 255.0f, myColor1.b / 255.0f, 255.0f});
+        cocos2d::ccColor4F secondaryColorParticle = cocos2d::ccColor4F({myColor2.r / 255.0f, myColor2.g / 255.0f, myColor2.b / 255.0f, 255.0f});
         // custom colors now
-        cocos2d::ccColor4F mShipStart = cocos2d::ccColor4F(shipMainStartColor.r / 255.0f, shipMainStartColor.g / 255.0f, shipMainStartColor.b / 255.0f, shipMainStartColor.a / 255.0f);
-        cocos2d::ccColor4F mShipEnd = cocos2d::ccColor4F(shipMainEndColor.r / 255.0f, shipMainEndColor.g / 255.0f, shipMainEndColor.b / 255.0f, shipMainEndColor.a / 255.0f);
-        cocos2d::ccColor4F cShipStart = cocos2d::ccColor4F(shipClickStartColor.r / 255.0f, shipClickStartColor.g / 255.0f, shipClickStartColor.b / 255.0f, shipClickStartColor.a / 255.0f);
-        cocos2d::ccColor4F cShipEnd = cocos2d::ccColor4F(shipClickEndColor.r / 255.0f, shipClickEndColor.g / 255.0f, shipClickEndColor.b / 255.0f, shipClickEndColor.a / 255.0f);
-        cocos2d::ccColor4F robotStart = cocos2d::ccColor4F(robotStartColor.r / 255.0f, robotStartColor.g / 255.0f, robotStartColor.b / 255.0f, robotStartColor.a / 255.0f);
-        cocos2d::ccColor4F robotEnd = cocos2d::ccColor4F(robotEndColor.r / 255.0f, robotEndColor.g / 255.0f, robotEndColor.b / 255.0f, robotEndColor.a / 255.0f);
-        cocos2d::ccColor4F swingStart = cocos2d::ccColor4F(swingStartColor.r / 255.0f, swingStartColor.g / 255.0f, swingStartColor.b / 255.0f, swingStartColor.a / 255.0f);
-        cocos2d::ccColor4F swingEnd = cocos2d::ccColor4F(swingEndColor.r / 255.0f, swingEndColor.g / 255.0f, swingEndColor.b / 255.0f, swingEndColor.a / 255.0f);
+        cocos2d::ccColor4F mShipStart = cocos2d::ccColor4F({shipMainStartColor.r / 255.0f, shipMainStartColor.g / 255.0f, shipMainStartColor.b / 255.0f, shipMainStartColor.a / 255.0f});
+        cocos2d::ccColor4F mShipEnd = cocos2d::ccColor4F({shipMainEndColor.r / 255.0f, shipMainEndColor.g / 255.0f, shipMainEndColor.b / 255.0f, shipMainEndColor.a / 255.0f});
+        cocos2d::ccColor4F cShipStart = cocos2d::ccColor4F({shipClickStartColor.r / 255.0f, shipClickStartColor.g / 255.0f, shipClickStartColor.b / 255.0f, shipClickStartColor.a / 255.0f});
+        cocos2d::ccColor4F cShipEnd = cocos2d::ccColor4F({shipClickEndColor.r / 255.0f, shipClickEndColor.g / 255.0f, shipClickEndColor.b / 255.0f, shipClickEndColor.a / 255.0f});
+        cocos2d::ccColor4F robotStart = cocos2d::ccColor4F({robotStartColor.r / 255.0f, robotStartColor.g / 255.0f, robotStartColor.b / 255.0f, robotStartColor.a / 255.0f});
+        cocos2d::ccColor4F robotEnd = cocos2d::ccColor4F({robotEndColor.r / 255.0f, robotEndColor.g / 255.0f, robotEndColor.b / 255.0f, robotEndColor.a / 255.0f});
+        cocos2d::ccColor4F swingStart = cocos2d::ccColor4F({swingStartColor.r / 255.0f, swingStartColor.g / 255.0f, swingStartColor.b / 255.0f, swingStartColor.a / 255.0f});
+        cocos2d::ccColor4F swingEnd = cocos2d::ccColor4F({swingEndColor.r / 255.0f, swingEndColor.g / 255.0f, swingEndColor.b / 255.0f, swingEndColor.a / 255.0f});
     };
     void update(float p0) {
         PlayerObject::update(p0);
