@@ -1,0 +1,147 @@
+{
+	"geode": "4.6.1",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"settings": {
+		"ship-title": {
+			"type": "title",
+			"name": "Ship Particles",
+			"description": "Customize the particles of your ship!"
+		},
+		"enable-shipmod": {
+			"type": "bool",
+			"name": "Tint Ship Particles",
+			"description": "Enables tinting the Ship Particles. \n\nDisable this to disable tinting the ship particles entirely and use the vanilla colors.",
+			"default": true
+		},
+		"swap-shipcolors": {
+			"type": "bool",
+			"name": "Swap Colors",
+			"description": "Swaps P1 and P2 colors for tinting the ship particles. \n\nBy default, the main ship particles do a gradient from P1 to P2, enabling this will make it do a gradient from P2 to P1 instead.",
+			"enable-if": "enable-shipmod && !ship-customcolor",
+			"default": false
+		},
+		"ship-customcolor": {
+			"type": "bool",
+			"name": "Ship - Use Custom Colors",
+			"description": "Tints the particles of your ship the custom color(s) defined in the following settings. \n\n If this is disabled, the mod will do its default behavior of tinting the particles to your player colors. \n To disable tinting all-together, disable the 'Tint Ship Particles' setting.",
+			"enable-if": "enable-shipmod",
+			"default": false
+		},
+		"ship-startcolor": {
+			"type": "rgba",
+			"name": "Main Particles - Start Color",
+			"description": "The start color of the main trailing particles in the ship gamemode.",
+			"enable-if": "ship-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"ship-endcolor": {
+			"type": "rgba",
+			"name": "Main Particles - End Color",
+			"description": "The end color of the main trailing particles in the ship gamemode.",
+			"enable-if": "ship-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"shipclick-startcolor": {
+			"type": "rgba",
+			"name": "Click Particles - Start Color",
+			"description": "The start color of the particles shown when clicking in the ship gamemode.",
+			"enable-if": "ship-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"shipclick-endcolor": {
+			"type": "rgba",
+			"name": "Click Particles - End Color",
+			"description": "The end color of the particles shown when clicking in the ship gamemode.",
+			"enable-if": "ship-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"robot-title": {
+			"type": "title",
+			"name": "Robot Particles",
+			"description": "Customize the particles of your robot!"
+		},
+		"enable-robotmod": {
+			"type": "bool",
+			"name": "Tint Robot Particles",
+			"description": "Enables tinting the Robot Particles. \n\nDisable this to disable tinting the robot particles entirely and use the vanilla colors.",
+			"default": true
+		},
+		"swap-robotcolors": {
+			"type": "bool",
+			"name": "Swap Colors",
+			"description": "Swaps P1 and P2 colors for tinting the robot particles. \n\nBy default, the main robot particles do a gradient from P1 to P2, enabling this will make it do a gradient from P2 to P1 instead.",
+			"enable-if": "enable-robotmod && !robot-customcolor",
+			"default": false
+		},
+		"robot-customcolor": {
+			"type": "bool",
+			"name": "Robot - Use Custom Colors",
+			"description": "Tints the particles of your robot the custom color(s) defined in the following settings. \n\n If this is disabled, the mod will do its default behavior of tinting the particles to your player colors. \n To disable tinting all-together, disable the 'Tint Robot Particles' setting.",
+			"enable-if": "enable-robotmod",
+			"default": false
+		},
+		"robot-startcolor": {
+			"type": "rgba",
+			"name": "Main Particles - Start Color",
+			"description": "The start color of the main trailing particles in the robot gamemode.",
+			"enable-if": "robot-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"robot-endcolor": {
+			"type": "rgba",
+			"name": "Main Particles - End Color",
+			"description": "The end color of the main trailing particles in the robot gamemode.",
+			"enable-if": "robot-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"swing-title": {
+			"type": "title",
+			"name": "Swing Copter Particles",
+			"description": "Customize the particles of your swing copter!"
+		},
+		"enable-swingmod": {
+			"type": "bool",
+			"name": "Tint Swing Copter Particles",
+			"description": "Enables tinting the Swing Copter Particles. \n\nDisable this to disable tinting the swing copter particles entirely and use the vanilla colors.",
+			"default": true
+		},
+		"swap-swingcolors": {
+			"type": "bool",
+			"name": "Swap Colors",
+			"description": "Swaps P1 and P2 colors for tinting the swing copter particles. \n\nBy default, the main swing copter particles do a gradient from P1 to P2, enabling this will make it do a gradient from P2 to P1 instead.",
+			"enable-if": "enable-swingmod && !swing-customcolor",
+			"default": false
+		},
+		"swing-customcolor": {
+			"type": "bool",
+			"name": "Swing Copter - Use Custom Colors",
+			"description": "Tints the particles of your swing copter the custom color(s) defined in the following settings. \n\n If this is disabled, the mod will do its default behavior of tinting the particles to your player colors. \n To disable tinting all-together, disable the 'Tint Swing Copter Particles' setting.",
+			"enable-if": "enable-swingmod",
+			"default": false
+		},
+		"swing-startcolor": {
+			"type": "rgba",
+			"name": "Main Particles - Start Color",
+			"description": "The start color of the main trailing particles in the swing copter gamemode.",
+			"enable-if": "swing-customcolor",
+			"default": [255, 255, 255, 255]
+		},
+		"swing-endcolor": {
+			"type": "rgba",
+			"name": "Main Particles - End Color",
+			"description": "The end color of the main trailing particles in the swing copter gamemode.",
+			"enable-if": "swing-customcolor",
+			"default": [255, 255, 255, 255]
+		}
+	},
+	"id": "saritahhh.colorful_particles",
+	"name": "Colorful Particles",
+	"version": "v1.0.0",
+	"developer": "Saritahhh",
+	"description": "Customize particles you weren't able to!"
+}
