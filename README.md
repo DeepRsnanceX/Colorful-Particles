@@ -1,23 +1,24 @@
-# ColorfulParticles
-This is where she makes a mod.
+**Colorful Particles** is a very simple mod that allows you to color the player particles you normally wouldn't be able to!
 
-<img src="logo.png" width="150" alt="the mod's logo" />
+This mod allows you to customize the following particles:
 
-*Update logo.png to change your mod's icon (please)*
+- Ship trailing particles.
+- Ship clicking particles.
+- Robot jump particles.
+- Swing fire particles.
 
-## Getting started
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+By default, the mod applies your **P1** and **P2** colors to the particles, however in the Mod's ***Settings Page*** you are able to fully *customize* the colors of each particle!
+The default coloring for particles is:
 
-## Build instructions
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
+- **Ship trailing particles**: Uses *P1* color.
+- **Ship clicking particles**: Uses *P2* color.
+- **Robot jump particles**: Gradients from *P1* to *P2* color.
+- **Swing fire particles**: Gradients from *P1* to *P2* color.
 
-# Resources
-* [Geode SDK Documentation](https://docs.geode-sdk.org/)
-* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-* [Geode CLI](https://github.com/geode-sdk/cli)
-* [Bindings](https://github.com/geode-sdk/bindings/)
-* [Dev Tools](https://github.com/geode-sdk/DevTools)
+Inside the mod's ***Settings Page*** you can customize the following aspects:
+
+- Enable/Disable each feature of the mod.
+- Swap P1/P2 color tinting for each particle set individually.
+- Fully customize Start/End color & alpha of each particle set individually!
+
+The mod *should* be entirely compatible with other particle mods, as well as with custom particle files loaded via Texture Packs, if you run into any issues, report them on the github page!
