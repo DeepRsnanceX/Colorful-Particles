@@ -18,7 +18,7 @@ The default coloring for particles is:
 Inside the mod's ***<cg>Settings Page</c>*** you can customize the following aspects:
 
 - <cg>Enable</c>/<cr>Disable</c> each feature of the mod.
-- <cd>Swap P1/P2 color tinting for each particle set individually.
+- <cd>Swap</c> P1/P2 color tinting for each particle set individually.
 - Fully customize <cs>Start/End color & alpha</c> of each particle set individually!
 
 The mod *should* be entirely compatible with other particle mods, as well as with custom particle files loaded via Texture Packs, if you run into any issues, report them on the github page!
